@@ -30,7 +30,8 @@ for i in range(õpilased2):
 
 #3
 from random import *
-hinne=randint(1,100)
+opilased=randint(10,30)
+hinnad = [random.randint(1, 100) for i in range(opilased)]
 min_hinne=0
 max_hinne=0
 for i in hinne:
