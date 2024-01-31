@@ -12,19 +12,22 @@ for i in range (n):
 
 
 #2
-from random import *
-õpilased1=int(input("Kui palju õpilasi klassis on: ")
-õpilased2=int(input("Kui palju õpilasi klassis on: ")
-hinne1=0
-hinne2=0
-for i in range(õpilased1):
-    hinne1=hinne1+random.randint(1,5)
-    keskmine_hinne1=hinne1/õpilased1
-for i in range(õpilased2):
-    hinne2=hinne2+random.randint(1,5)
-    keskmine_hinne2=hinne2/õpilased2
-    print("Klassi õpilaste keskmine hinne on: "+str(keskmine_hinne1))
-    print("Klassi õpilaste keskmine hinne on: "+str(keskmine_hinne2))
+klass1=(3,4,5,5,3,2,5,4,4,3,2,5,5,3,4,2,5,5,3,2)
+klass2=(5,4,5,5,4,3,3,4,5,5,3,4,3,4,5,5,3,3,4,5)
+summa1=0
+summa2=0
+õpilased1=0
+õpilased2=0
+for hinne in klass1:
+    summa1+=hinne
+    õpilased1+=1
+    keskmine1=summa1/õpilased1
+for hinne in klass2:
+    summa2+=hinne
+    õpilased2+=1
+    keskmine2=summa2/õpilased2
+print("Klassi õpilaste keskmine hinne on(A): "+str(keskmine1))
+print("Klassi õpilaste keskmine hinne on(B): "+str(keskmine2))
     
 
 
