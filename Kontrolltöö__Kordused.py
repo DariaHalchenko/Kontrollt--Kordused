@@ -29,16 +29,20 @@ for i in range(õpilased2):
 
 
 #3
-from random import *
-opilased=randint(10,30)
+import random
+
+opilased=random.randint(10,30)
 hinnad = [random.randint(1, 100) for i in range(opilased)]
-min_hinne=0
-max_hinne=0
-for i in hinne:
-    if hinne<min_hinne:
-        min_hinne=hinne 
-    if hinne>max_hinne:
-        max_hinne=hinne 
+min_hinne=50
+max_hinne=50
+print("Õppilaste arv: " + str(opilased))
+print("Hinnad: "+ str(hinnad))
+for i in hinnad:
+    hind=i
+    if hind<min_hinne:
+        min_hinne=hind
+    if hind>max_hinne:
+        max_hinne=hind
 print("Minimaalne punktisumma: "+str(min_hinne))
 print("Maksimaalne punktisumma: "+str(max_hinne))
 
