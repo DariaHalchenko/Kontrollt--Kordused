@@ -1,4 +1,4 @@
-﻿5 Вариант
+﻿#5 Вариант
 1
 n=(int(input("Kirjutage arv vahemikus 1 kuni 9: ")))
 for i in range (n):
@@ -11,9 +11,15 @@ for i in range (n):
     print(i, " ----- ")
 
 
-2
-A=(4,5,4,3,5)
-B=(4,5,2,3,5)
+#2
+from 
+õpilased1=int(input("Kui palju õpilasi klassis on: ")
+õpilased2=int(input("Kui palju õpilasi klassis on: ")
+hinne1=0
+hinne2=0
+for i in range(õpilased1):
+    hinne1=õpilased1+random.randint(1,5)
+    
 
 
 3
