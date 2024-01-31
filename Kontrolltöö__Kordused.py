@@ -32,13 +32,12 @@ print("Klassi õpilaste keskmine hinne on(B): "+str(keskmine2))
 
 
 #3
-import random
-
-opilased=random.randint(10,30)
-hinnad = [random.randint(1, 100) for i in range(opilased)]
+from random import *
+õpilased=randint(10,30)
+hinnad = [randint(1, 100) for i in range(õpilased)]
 min_hinne=50
 max_hinne=50
-print("Õppilaste arv: " + str(opilased))
+print("Õppilaste arv: " + str(õpilased))
 print("Hinnad: "+ str(hinnad))
 for i in hinnad:
     hind=i
@@ -51,12 +50,14 @@ print("Maksimaalne punktisumma: "+str(max_hinne))
 
 #4
 from random import *
-elanikud=randint(1,1000)
-ruut=randint(1,1000)
-tihedus=0
+kogu_rahvastikust=0
+kogupindala=0
 linnaosad=12
 for i in range(linnaosad):
-    asustustihedus=linnaosad/ruut
-    tiheduse_summa+=asustustihedus
-    keskmine_tihedus=tiheduse_summa/linnaosad
+    elanikkonnast=randint(1,1000)
+    piirkond=randint(1, 1000)
+    tihedus=elanikkonnast/piirkond
+    kogu_rahvastikust+=elanikkonnast
+    kogupindala+=piirkond
+keskmine_tihedus=kogu_rahvastikust/kogupindala
 print("Piirkonna kui terviku keskmine asustustihedus: "+str(keskmine_tihedus))
