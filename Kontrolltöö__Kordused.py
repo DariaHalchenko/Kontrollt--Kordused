@@ -69,6 +69,27 @@ for hinne in klass2:
     keskmine2=summa2/õpilased2
 print("Klassi õpilaste keskmine hinne on(A): "+str(keskmine1))
 print("Klassi õpilaste keskmine hinne on(B): "+str(keskmine2))
+
+#2.1
+from random import *
+while True:
+    try:
+        N=int(input("Kui palju õpilasi:  "))
+        if 10<N<30:
+            break
+    except ValueError:
+        print("Vale tüüp")
+kesk1=0
+kesk2=0
+for i in range(N):
+    h1=randint(1,5)
+    h2=randint(1,5)
+    kesk1+=h1
+    kesk2+=h2
+kesk1/=N
+kesk2/=N
+print(f"Keskmine hinne 1 klassis on {kesk1}")
+print(f"Keskmine hinne 2 klassis on {kesk2}")
     
 
 
