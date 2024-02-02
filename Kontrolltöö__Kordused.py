@@ -10,6 +10,47 @@ for i in range (n):
     print(i, "| []  |")
     print(i, " ----- ")
 
+#1.(2 Вариант)
+while True:
+    try:
+        mitu=int(input("Mitu tk:  "))
+        if 1<mitu<10:
+            break
+    except ValueError:
+        print("Vale tüüp")
+for i in range(mitu):
+    print('/V\ '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print('/ V \ '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print(' / V V \  '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print('/VV V VV\  '.center(10, ' ' ), end="")
+print()
+
+#1.2
+while True:
+    try:
+        mitu=int(input("Mitu tk:  "))
+        if 1<mitu<10:
+            break
+    except ValueError:
+        print("Vale tüüp")
+for i in range(mitu):
+    print('~~~~~ '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print('/_____\ '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print(' | []  |  '.center(10, ' ' ), end="")
+print()
+for i in range(mitu):
+    print('----- '.center(10, ' ' ), end="")
+print()
 
 #2
 klass1=(3,4,5,5,3,2,5,4,4,3,2,5,5,3,4,2,5,5,3,2)
