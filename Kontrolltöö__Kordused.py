@@ -123,3 +123,45 @@ for i in range(linnaosad):
     kogupindala+=piirkond
 keskmine_tihedus=kogu_rahvastikust/kogupindala
 print("Piirkonna kui terviku keskmine asustustihedus: "+str(keskmine_tihedus))
+
+#4.1
+from random import *
+sum_num=0
+sum_km=0
+for i in range(12):
+    num=randint(1000,10000)
+    km=randint(1,1000)
+    sum_num+=num 
+    sum_km+=km 
+    print(f'{i+1}. maakond. \nElanikud: {num}. Pindala: {km}\n Kokku: {sum_num}, {sum_km}')
+vastus=sum_num/sum_km
+print(f"Keskmine: {vastus:.3f}")
+
+
+#5 (4 Вариант)
+from random import *
+while True:
+    try:
+        K=int(input("Mitu kotleti sul on?  "))
+        if K>0:
+            break
+    except ValueError:
+        print("Vale tüüp")
+while True:
+    try:
+        M=int(input("Mitu kotleti ühel pannil?  "))
+        if M>0:
+            break
+    except ValueError:
+        print("Vale tüüp")
+pann=0
+lisapann=0
+while K>M:
+        K-=M
+        pann+=1
+        print(f"Praetud: {pann} tk")
+        if K<M:
+            pann+=1
+            print(f"Praetud: {pann} tk")
+print(f"Kokku oli praetud: {pann} panni")
+print()
