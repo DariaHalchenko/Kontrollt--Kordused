@@ -1,5 +1,5 @@
 ﻿#5 Вариант
-1
+#1
 n=(int(input("Kirjutage arv vahemikus 1 kuni 9: ")))
 for i in range (n):
     for i in range(n-i-1):
